@@ -1,16 +1,20 @@
 PODS:
+  - SkeletonView (1.8.3)
   - TMDBSwift (0.5.1)
 
 DEPENDENCIES:
+  - SkeletonView
   - TMDBSwift
 
 SPEC REPOS:
   trunk:
+    - SkeletonView
     - TMDBSwift
 
 SPEC CHECKSUMS:
+  SkeletonView: ce0c2a2e8154c57b32f5b31b65f4cb92ca119861
   TMDBSwift: 9220f3dcee23372c05b92f8c111f5f4c37185aee
 
-PODFILE CHECKSUM: 765a0669f9ea5ccd4b3d13db65237c770dab3de3
+PODFILE CHECKSUM: 4f140dca98e4651a8087a07a8968361b45cb9c6f
 
 COCOAPODS: 1.8.4

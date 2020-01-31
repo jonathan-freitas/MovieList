@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="MovieTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" id="KGk-i7-Jjw" customClass="MovieTableViewCell" customModule="MovieList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ebO-MN-F5H">
+                        <rect key="frame" x="16" y="16" width="70" height="98"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="fhy-NA-YRj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The incredible adventures of Cebolinha and his fellow friends" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ora-e5-AmN">
+                        <rect key="frame" x="100" y="14" width="204" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="YLy-kj-zZl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adventure" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8x-ed-c3S">
+                        <rect key="frame" x="100" y="105" width="65" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="JyX-Op-avg"/>
+                            <constraint firstAttribute="width" constant="65" id="xY2-Kz-nor"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="09/09/2020" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvi-Vh-vgW">
+                        <rect key="frame" x="239" y="105" width="65" height="11"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHY-Ba-fD6">
+                        <rect key="frame" x="100" y="44" width="204" height="57"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="204" id="MwN-KI-ijY"/>
+                        </constraints>
+                        <string key="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</string>
+                        <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="8"/>
+                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ebO-MN-F5H" secondAttribute="bottom" constant="16" id="2GU-k5-bEK"/>
+                    <constraint firstItem="gHY-Ba-fD6" firstAttribute="top" secondItem="Ora-e5-AmN" secondAttribute="bottom" constant="4" id="2QX-Ok-52Q"/>
+                    <constraint firstItem="Ora-e5-AmN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="3cc-y0-27t"/>
+                    <constraint firstItem="gHY-Ba-fD6" firstAttribute="leading" secondItem="ebO-MN-F5H" secondAttribute="trailing" constant="14" id="9Wm-1C-adG"/>
+                    <constraint firstItem="w8x-ed-c3S" firstAttribute="leading" secondItem="ebO-MN-F5H" secondAttribute="trailing" constant="14" id="Crk-Ll-BqB"/>
+                    <constraint firstItem="w8x-ed-c3S" firstAttribute="top" secondItem="Ora-e5-AmN" secondAttribute="bottom" constant="65" id="FQT-FU-GTm"/>
+                    <constraint firstAttribute="trailing" secondItem="Ora-e5-AmN" secondAttribute="trailing" constant="16" id="HGq-iH-sB2"/>
+                    <constraint firstItem="ebO-MN-F5H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Wso-mX-928"/>
+                    <constraint firstItem="Ora-e5-AmN" firstAttribute="leading" secondItem="ebO-MN-F5H" secondAttribute="trailing" constant="14" id="Xq4-39-4Ue"/>
+                    <constraint firstItem="w8x-ed-c3S" firstAttribute="top" secondItem="gHY-Ba-fD6" secondAttribute="bottom" constant="4" id="eDt-l0-fEN"/>
+                    <constraint firstItem="ebO-MN-F5H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="eFI-IX-b0K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
