@@ -1,7 +1,7 @@
-platform :ios, '10.0' 
+platform :ios, '13.0'
 
 target 'MovieList' do
-  pod 'Alamofire'
+  pod 'TMDBSwift'
 end
 
 
