@@ -1,0 +1,1 @@
+../../../Target Support Files/TMDBSwift/TMDBSwift-umbrella.h
