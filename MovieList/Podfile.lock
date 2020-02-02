@@ -1,16 +1,20 @@
 PODS:
-  - Alamofire (4.9.1)
+  - SkeletonView (1.8.3)
+  - TMDBSwift (0.5.1)
 
 DEPENDENCIES:
-  - Alamofire
+  - SkeletonView
+  - TMDBSwift
 
 SPEC REPOS:
   trunk:
-    - Alamofire
+    - SkeletonView
+    - TMDBSwift
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  SkeletonView: ce0c2a2e8154c57b32f5b31b65f4cb92ca119861
+  TMDBSwift: 9220f3dcee23372c05b92f8c111f5f4c37185aee
 
-PODFILE CHECKSUM: 5f16334849189ab6764abfc90f7d1863ae6eced2
+PODFILE CHECKSUM: a6de7c3b03de64ca090e66541fcb8d7d2ae5e066
 
 COCOAPODS: 1.8.4

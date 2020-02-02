@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="MovieSkeletonTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieSkeletonTableViewCell" id="tcA-Rw-VeM" customClass="MovieSkeletonTableViewCell" customModule="MovieList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tcA-Rw-VeM" id="zsQ-zu-X5L">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1b6-QZ-8SP">
+                        <rect key="frame" x="16" y="16" width="288" height="98"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZeQ-M6-G6q">
+                                <rect key="frame" x="1" y="0.0" width="70" height="98"/>
+                                <color key="backgroundColor" white="0.74677230046948351" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="5hO-zG-R8J"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zF1-Xa-uda">
+                                <rect key="frame" x="83" y="89" width="59" height="9"/>
+                                <color key="backgroundColor" white="0.74677230046948351" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="9" id="N8C-ke-mj0"/>
+                                    <constraint firstAttribute="width" constant="59" id="QX1-fZ-LQH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Exb-of-doh">
+                                <rect key="frame" x="83" y="28" width="206" height="57"/>
+                                <color key="backgroundColor" white="0.74677230046948351" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="8eX-ia-BIG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozh-Yb-2Yr">
+                                <rect key="frame" x="83" y="1" width="206" height="23"/>
+                                <color key="backgroundColor" white="0.74677230046948351" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Lh6-cD-riD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N79-bv-iZd">
+                                <rect key="frame" x="236" y="89" width="53" height="9"/>
+                                <color key="backgroundColor" white="0.74677230046948351" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="9" id="FRs-QR-vdf"/>
+                                    <constraint firstAttribute="width" constant="53" id="c3N-TD-Wt3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="N79-bv-iZd" secondAttribute="trailing" constant="-1" id="4uM-zh-IHc"/>
+                            <constraint firstItem="zF1-Xa-uda" firstAttribute="top" secondItem="Exb-of-doh" secondAttribute="bottom" constant="4" id="NRw-ZO-uRg"/>
+                            <constraint firstItem="Exb-of-doh" firstAttribute="leading" secondItem="ZeQ-M6-G6q" secondAttribute="trailing" constant="12" id="Owu-No-a4o"/>
+                            <constraint firstAttribute="trailing" secondItem="ozh-Yb-2Yr" secondAttribute="trailing" constant="-1" id="S3E-do-ORN"/>
+                            <constraint firstItem="N79-bv-iZd" firstAttribute="top" secondItem="Exb-of-doh" secondAttribute="bottom" constant="4" id="U0p-Qi-dwB"/>
+                            <constraint firstAttribute="bottom" secondItem="ZeQ-M6-G6q" secondAttribute="bottom" id="YYq-Km-kxV"/>
+                            <constraint firstItem="ozh-Yb-2Yr" firstAttribute="top" secondItem="1b6-QZ-8SP" secondAttribute="top" constant="1" id="ZRo-M6-GdB"/>
+                            <constraint firstItem="ZeQ-M6-G6q" firstAttribute="leading" secondItem="1b6-QZ-8SP" secondAttribute="leading" constant="1" id="gWw-g9-EmX"/>
+                            <constraint firstItem="ozh-Yb-2Yr" firstAttribute="leading" secondItem="ZeQ-M6-G6q" secondAttribute="trailing" constant="12" id="jUe-8z-qoR"/>
+                            <constraint firstItem="zF1-Xa-uda" firstAttribute="leading" secondItem="ZeQ-M6-G6q" secondAttribute="trailing" constant="12" id="kT7-T7-xr4"/>
+                            <constraint firstItem="Exb-of-doh" firstAttribute="top" secondItem="ozh-Yb-2Yr" secondAttribute="bottom" constant="4" id="kYA-Hk-IGm"/>
+                            <constraint firstItem="ZeQ-M6-G6q" firstAttribute="top" secondItem="1b6-QZ-8SP" secondAttribute="top" id="r1M-9A-TdV"/>
+                            <constraint firstAttribute="trailing" secondItem="Exb-of-doh" secondAttribute="trailing" constant="-1" id="zbs-MD-cJv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1b6-QZ-8SP" firstAttribute="top" secondItem="zsQ-zu-X5L" secondAttribute="top" constant="16" id="Agt-Yd-Z3P"/>
+                    <constraint firstItem="1b6-QZ-8SP" firstAttribute="leading" secondItem="zsQ-zu-X5L" secondAttribute="leading" constant="16" id="Wqf-pa-Ocg"/>
+                    <constraint firstAttribute="bottom" secondItem="1b6-QZ-8SP" secondAttribute="bottom" constant="16" id="jrL-LR-zsG"/>
+                    <constraint firstAttribute="trailing" secondItem="1b6-QZ-8SP" secondAttribute="trailing" constant="16" id="uO2-kh-RUv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="zHr-4W-ehv"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
