@@ -12,10 +12,12 @@ import TMDBSwift
 class MainViewController: UIViewController {
 
     // MARK: - Variables
-        
+    
+    let moviesDataSource: MoviesDataSource = MoviesDataSource()
+    let cellHeight: CGFloat = 130
+    
     var viewModel: MainViewModel?
     var tableView: UITableView = UITableView()
-    let moviesDataSource: MoviesDataSource = MoviesDataSource()
     
     // MARK: - Lifecycle
     
@@ -57,12 +59,13 @@ class MainViewController: UIViewController {
             tableView.topAnchor.constraint(equalTo: self.view.topAnchor),
             tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             tableView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
-//            tableView.leftAnchor.constraint(equalTo: self.view.leftAnchor)
+            tableView.leftAnchor.constraint(equalTo: self.view.leftAnchor)
         ])
         
         tableView.delegate = self
         tableView.dataSource = moviesDataSource
         tableView.contentInset.bottom = 100
+        tableView.rowHeight = 130
         
         // Starting point
         getUpcomingMovies()
@@ -90,11 +93,15 @@ class MoviesDataSource: NSObject, UITableViewDataSource {
     
     // MARK: - Variables
     
-    let cellHeight: CGFloat = 130
-
+    let sectionsNumber: Int = 1
+    
     var skeletonCount: Int = 12
     var shouldShowSkeleton: Bool = true
     var movies: [MovieMDB] = []
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sectionsNumber
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if shouldShowSkeleton {
@@ -108,14 +115,10 @@ class MoviesDataSource: NSObject, UITableViewDataSource {
         if shouldShowSkeleton {
             let cell: MovieSkeletonTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MovieSkeletonTableViewCell", for: indexPath) as! MovieSkeletonTableViewCell
             return cell
+        } else {
+            let cell: MovieTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell", for: indexPath) as! MovieTableViewCell
+            cell.viewModel = MovieItemViewModel(movie: movies[indexPath.row])
+            return cell
         }
-        
-        let cell: MovieTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell", for: indexPath) as! MovieTableViewCell
-        cell.viewModel = MovieItemViewModel(movie: movies[indexPath.row])
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return cellHeight
     }
 }

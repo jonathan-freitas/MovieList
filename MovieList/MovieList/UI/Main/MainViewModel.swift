@@ -16,12 +16,11 @@ protocol MainViewDelegate {
 class MainViewModel {
 
     // MARK: - Variables
-    let coordinatorDelegate: MainCoordinatorDelegate
+    var coordinatorDelegate: MainCoordinatorDelegate?
     var viewDelegate: MainViewDelegate?
     
-    init(viewDelegate: MainCoordinatorDelegate) {
+    init() {
         TMDBConfig.apikey = "c5850ed73901b8d268d0898a8a9d8bff"
-        coordinatorDelegate = viewDelegate
     }
     
     func upcomingMovies(page: Int, language: String = "en") {
@@ -32,6 +31,6 @@ class MainViewModel {
     }
     
     func viewMovieDetails(movieID: Int) {
-        coordinatorDelegate.viewDetails(movieID: movieID)
+        coordinatorDelegate?.viewDetails(movieID: movieID)
     }
 }

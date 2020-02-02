@@ -10,6 +10,16 @@ import UIKit
 
 class MovieTableViewCell: UITableViewCell {
 
+    // MARK: - IBOutlets
+    
+    @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var genreLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    // MARK: - Model
+    
     var viewModel: MovieItemViewModel? = nil {
         didSet {
             bindUI()
@@ -21,6 +31,12 @@ class MovieTableViewCell: UITableViewCell {
     }
     
     private func bindUI() {
+        titleLabel.text = viewModel?.title
+        descLabel.text = viewModel?.description
+        genreLabel.text = viewModel?.genre
+        dateLabel.text = viewModel?.releaseDate
+        
+        // TODO: Request Poster
         
     }
 }

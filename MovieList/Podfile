@@ -1,8 +1,17 @@
 platform :ios, '13.0'
 
+# Pods for the app
 target 'MovieList' do
+  
   pod 'TMDBSwift'
   pod 'SkeletonView'
+  
+  # Pods for tests
+  target 'MovieListTests' do
+    
+  end
+
 end
+
 
 

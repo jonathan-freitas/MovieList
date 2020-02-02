@@ -17,6 +17,10 @@ struct MovieItemViewModel {
         return movie.title ?? "TITULO"
     }
     
+    var description: String {
+        return movie.overview ?? "DESCRICAO"
+    }
+    
     var genre: String {
         return movie.genres[0].name ?? "GENERO"
     }

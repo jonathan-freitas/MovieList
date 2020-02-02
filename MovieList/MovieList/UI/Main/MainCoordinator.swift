@@ -24,7 +24,8 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        mainViewModel = MainViewModel(viewDelegate: self)
+        mainViewModel = MainViewModel()
+        mainViewModel?.coordinatorDelegate = self
         mainViewController = MainViewController(viewModel: mainViewModel!)
         window.rootViewController = mainViewController
     }
